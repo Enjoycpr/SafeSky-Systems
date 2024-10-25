@@ -1,0 +1,17 @@
+https://github.com/Enjoycpr/SafeSky-Systems.git
+
+echo "# SafeSky-Systems" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Enjoycpr/SafeSky-Systems.git
+git push -u origin main
+
+az --version
+
+git remote add origin https://github.com/Enjoycpr/SafeSky-Systems.git
+git branch -M main
+git push -u origin main
+
+az --help

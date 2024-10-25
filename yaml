@@ -1,0 +1,37 @@
+name: Update package-lock.json
+
+on:
+    schedule:
+        # This is probably 6am UTC, which is 10pm PST or 11pm PDT
+        # Alternatively, 6am local is also fine
+        - cron: '0 6 * * *'
+    workflow_dispatch: {}
+
+   jobs:
+  updatePackageJsonLock:
+    runs-on: ubuntu-latest
+    if: github.repository == 'microsoft/TypeScript-TmLanguage'
+    permissions:
+      contents: write
+
+ <!-- IMPORTANT: Please be sure to remove any private information before submitting. -->
+
+Does this occur consistently? <!-- TODO: Type Yes or No -->
+Repro steps:
+<!-- TODO: Share the steps needed to reliably reproduce the problem. Please include actual and expected results. -->
+
+1.
+2.
+
+Action: azureml.commandPalette.executeYaml
+Error type: t
+Error Message: bad indentation of a mapping entry at line 10, column 4:
+       jobs:
+       ^
+
+
+Version: 1.2.0
+OS: win32
+OS Release: 10.0.22635
+Product: Visual Studio Code
+Product Version: 1.94.2
